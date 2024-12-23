@@ -1,0 +1,17 @@
+meta {
+  name: Add or Update Review
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:5000/customer/auth/review/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  "review": "This a nice book review"
+  }
+}
